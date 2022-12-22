@@ -13,6 +13,7 @@ import java.util.Map;
 
 @RestController
 @RequiredArgsConstructor
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RequestMapping("/movies")
 public class MovieController {
     private final MovieRepository movieRepository;

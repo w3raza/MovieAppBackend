@@ -14,6 +14,7 @@ import java.util.Map;
 
 @RestController
 @RequiredArgsConstructor
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RequestMapping("/cast")
 public class CastMemberController {
     private final CastMemberRepository castMemberRepository;
